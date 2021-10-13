@@ -8,6 +8,10 @@ public class Main {
         Scanner sentence = new Scanner(System.in);
         String example = sentence.nextLine();
         int length= example.split(" ").length;
+        int stringLength= example.length();
+        int stringLengthWithoutSpaces= example.replace(" ", "").length();
+        System.out.println("There are " + stringLengthWithoutSpaces +" letters in this sentence");
         System.out.println("Your sentence is  "+ length + " words long!!!!");
+
     }
 }
